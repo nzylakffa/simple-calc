@@ -14,7 +14,7 @@ from io import StringIO
 ###################
 ##### Sidebar #####
 ###################
-# st.sidebar.image('ffa_red.png', use_column_width=True)
+st.sidebar.image('ffa_red.png', use_column_width=True)
 st.sidebar.markdown("<h1 style='text-align: center;'>Read This!</h1>", unsafe_allow_html=True)
 st.sidebar.markdown("* Click Fullscreen at the bottom for a better user experience")
 st.sidebar.markdown("* This is the simplest version of a trade calculator. It evaluates the trade in a vacuum, not taking into account the strengths and weaknesses of your team.")
