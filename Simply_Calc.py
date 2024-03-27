@@ -80,25 +80,25 @@ if dynasty:
     # Is it a good or bad trade?
     if trade_diff == 0:
         st.subheader(f":gray[This is a perfectly even trade!]")
-    elif trade_diff > 10:
+    elif trade_diff > 15:
         st.subheader(f":green[You are winning this trade by a lot!]")
         st.subheader(f"Value Gained in this Trade: +{trade_diff}")
-    elif trade_diff > 5:
+    elif trade_diff > 10:
         st.subheader(f":green[You are winning this trade!]")
         st.subheader(f"Value Gained in this Trade: +{trade_diff}")
-    elif trade_diff >  2:
+    elif trade_diff >  5:
         st.subheader(f":green[You are winning this trade by a small amount!]")
         st.subheader(f"Value Gained in this Trade: +{trade_diff}")
     elif trade_diff > 0:
         st.subheader(f":green[You are winning this trade by a very small amount]")
         st.subheader(f"Value Gained in this Trade: +{trade_diff}")
-    elif trade_diff >  -2:
+    elif trade_diff >  -5:
         st.subheader(f":red[You are losing this trade by a very small amount]")
         st.subheader(f"Value Gained in this Trade: {trade_diff}")
-    elif trade_diff > - 5:
+    elif trade_diff > - 10:
         st.subheader(f":red[You are losing this trade by a small amount]")
         st.subheader(f"Value Gained in this Trade: {trade_diff}")
-    elif trade_diff > - 10:
+    elif trade_diff > - 15:
         st.subheader(f":red[You are losing this trade!]")
         st.subheader(f"Value Gained in this Trade: {trade_diff}")
     else:
