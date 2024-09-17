@@ -111,7 +111,7 @@ else:
 
     scoring = st.selectbox(
         "Input your league's scoring format",
-        ('PPR', 'Half', 'Std', '1.5 TE', '6 Pt Pass'))
+        ('PPR', 'HPPR', 'Std', '1.5 TE', '6 Pt Pass'))
     
     teams = st.number_input("How many teams are in your league?", step=1, value=12)
         
