@@ -170,13 +170,13 @@ else:
         return value
 
     # GitHub raw URL for the CSV file
-    github_csv_url = 'https://raw.githubusercontent.com/nzylakffa/sleepercalc/main/All%202024%20Projections.csv'
+    github_csv_url = 'https://raw.githubusercontent.com/nzylakffa/sleepercalc/main/ROS%20Rankings%20for%20trade%20calc.csv'
 
     # Read the CSV file into a DataFrame
     ros = pd.read_csv(github_csv_url)
 
     # Keep these columns of ros
-    ros = ros[["Player Name", "Games", "Team", "Pos", "PPR", "Half", "Std", "1.5 TE", "6 Pt Pass"]]
+    ros = ros[["Player Name", "Team", "Pos", "PPR", "HPPR", "Std", "1.5 TE", "6 Pt Pass", "DK"]]
 
     # Replace defense names
     replace_dict = {'Ravens D/ST': 'BAL D/ST', 'Cowboys D/ST': 'DAL D/ST', 'Bills D/ST': 'BUF D/ST', 'Jets D/ST': 'NYJ D/ST', 'Dolphins D/ST': 'MIA D/ST',
