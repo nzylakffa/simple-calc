@@ -176,7 +176,7 @@ else:
     ros = pd.read_csv(github_csv_url)
 
     # Keep these columns of ros
-    ros = ros[["Player Name", "Team", "Pos", "PPR", "HPPR", "Std", "1.5 TE", "6 Pt Pass", "DK"]]
+    ros = ros[["Player Name", "Team", "Pos", "Games", "PPR", "HPPR", "Std", "1.5 TE", "6 Pt Pass", "DK"]]
 
     # Replace defense names
     replace_dict = {'Ravens D/ST': 'BAL D/ST', 'Cowboys D/ST': 'DAL D/ST', 'Bills D/ST': 'BUF D/ST', 'Jets D/ST': 'NYJ D/ST', 'Dolphins D/ST': 'MIA D/ST',
